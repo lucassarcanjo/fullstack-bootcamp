@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <main class="container">
+        <h1 class="container__title">Color Picker</h1>
+        <div class="color-container">
+          <div class="slider-container">
+            <label class="color-label" for="red-input">Red</label>
+            <div class="input-group">
+              <input
+                type="range"
+                class="color-input"
+                id="red-input"
+                min="0"
+                max="255"
+                value="0"
+              />
+              <input type="text" class="color-code" value="0" disabled />
+            </div>
+            <label class="color-label" for="green-input">Green</label>
+            <div class="input-group">
+              <input
+                type="range"
+                class="color-input"
+                id="green-input"
+                min="0"
+                max="255"
+                value="0"
+              />
+              <input type="text" class="color-code" value="0" disabled />
+            </div>
+            <label class="color-label" for="blue-input">Blue</label>
+            <div class="input-group">
+              <input
+                type="range"
+                class="color-input"
+                id="blue-input"
+                min="0"
+                max="255"
+                value="0"
+              />
+              <input type="text" class="color-code" value="0" disabled />
+            </div>
+          </div>
+          <div class="color-selected" id="color-container"></div>
+        </div>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
